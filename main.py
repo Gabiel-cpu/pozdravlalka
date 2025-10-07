@@ -100,7 +100,7 @@ async def question3_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message.photo:
         # Фото получено — переходим к следующему вопросу
         await update.message.reply_photo(photo=open("images/photo3", "rb"),
-            caption="Фото получено! 👍\n На вниматочность: \n Посмотри на пятник и найти буквы: \n 1: 5 (x2) \n 3: 5, 7, 10 \n 4: 5 \n 6: 3 "
+            caption="Фото получено! 👍\n На вниматочность: \n Посмотри на памятник и найти буквы: \n 1: 5 (x2) \n 3: 5, 7, 10 \n 4: 5 \n 6: 3 "
         )
         return Q4A
     else:
@@ -116,7 +116,7 @@ async def question4(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Молодец! А теперь составь из этих букв слово")
         return Q4S
     else:
-        await update.message.reply_text("Попробуй... еще... раз...")
+        await update.message.reply_text("Составь из этих букв слово: 3152764")
         return Q4A
 
 async def question4s(update: Update, context: ContextTypes.DEFAULT_TYPE):
