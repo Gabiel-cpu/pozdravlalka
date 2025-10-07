@@ -116,7 +116,7 @@ async def question4(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Молодец! А теперь составь из этих букв слово")
         return Q4S
     else:
-        await update.message.reply_text("Составь из этих букв слово: 3152764")
+        await update.message.reply_text("Попробуй... еще... раз...")
         return Q4A
 
 async def question4s(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -125,7 +125,7 @@ async def question4s(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Молодец! Скинь фотку!!!!")
         return Q4P
     else:
-        await update.message.reply_text("Попробуй... еще... раз...")
+        await update.message.reply_text("Составь из этих букв слово: 3152764")
         return Q4S
     
 
